@@ -68,7 +68,7 @@ pip install -r requirements.txt
 Installation
 Running the Streamlit App Locally
 1Clone the repository: 
-git clone https://github.com/Atulsah17/Business-QA-Chatbot.git
+git clone https://github.com/Atulsah17/Business-QA-bot
 cd business-qa-bot
 
 2. Install dependencies: 
