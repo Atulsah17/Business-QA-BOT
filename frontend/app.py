@@ -11,12 +11,14 @@ project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 # Add the project root to the sys.path
 sys.path.append(project_root)
 
-# Now you can import from backend
+
 from backend.pinecone_utils import PineconeClient
 from backend.cohere_utils import generate_answer
 from backend.document_processing import extract_text_from_pdf, chunk_document, generate_embeddings
 import streamlit as st
 from sentence_transformers import SentenceTransformer
+
+
 
 # Initialize API Clients using environment variables
 pinecone_api_key = os.getenv("PINECONE_API_KEY")

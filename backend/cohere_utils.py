@@ -11,7 +11,7 @@ def generate_answer(api_key, query, context):
     response = cohere_client.generate(
         model='command-xlarge-nightly',
         prompt=prompt,
-        max_tokens=150,
-        temperature=0.7
+        max_tokens=500,
+        temperature=0.3
     )
     return response.generations[0].text.strip()
